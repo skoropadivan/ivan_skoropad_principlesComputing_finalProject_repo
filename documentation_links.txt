@@ -1,0 +1,8 @@
+https://static.wikia.nocookie.net/htmlcss/images/5/5b/HTML_Color_Codes.png/revision/latest?cb=20100709233707
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals
+https://www.w3schools.com/howto/howto_css_hero_image.asp
+https://www.w3schools.com/howto/howto_css_parallax.asp
+https://dev.to/ingosteinke/pure-css-parallax-perspective-beyond-landscape-images-24g2
+https://dev.to/ingosteinke/pure-css-parallax-perspective-beyond-landscape-images-24g2
+https://www.telegraphherald.com/news/iowa-illinois-wisconsin/article_88a5bb4a-94d9-11e3-aacd-0017a43b2370.html#:~:text=CHICAGO%20%E2%80%94%20The%20city%20of%20Chicago,fallen%20since%20New%20Year's%20Eve
+https://www.w3schools.com/css/css_margin.asp

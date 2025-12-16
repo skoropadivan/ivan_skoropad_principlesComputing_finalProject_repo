@@ -1,45 +1,97 @@
-<!doctype html>
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/main.css">
-      <title>Ivan Skoropad Final Project</title>
-   </head>
-   <body>
-      <div class="container" id="bsr-wrapper">
-         <h1>The Economic Impact of Snowfall on Labor Statistics in Chicago</h1>
-         <h3>By Ivan Skoropad</h3>
-         <div class='my-5'></div>
-         <p style="font-size:20px;">This project uses publicly available data to get possible insights about weather trends in
-            Chicago and corresponding trend in labor force.
-         </p>
-         <p style="font-size:15px;">
-            The analysis utilizes historical weather data from the National Centers for Environmental Information (NCEI),
-            specifically the Chicago O'Hare weather station. This is complemented by economic and employment data (CSV format) 
-            from the U.S. Bureau Labor Statistics (BLS) public APIs.
-         </p>
-         <div class='py-3 my-4'></div>
-         <h2>Heading 2</h2>
-         <iframe src="sectors_wage_change.html"
-            height="700" width="1000">
-            </iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowfall Impact on Chicago Labor</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
 
-         <picture>
-            <source srcset="https://unsplash.it/400/300" type="image/svg+xml">
-            <img src="https://unsplash.it/400/300" class="mx-auto d-block" alt="Responsive image">
-         </picture>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet fugit exercitationem earum quod. Ad doloribus dignissimos quaerat error aspernatur est, voluptatem deserunt at, dolores asperiores incidunt eligendi commodi sapiente.</p>
-         <div class='py-3 my-4'></div>
-         <h2>Heading 2</h2>
-         <div class="row">
-            <div class="col"><img src="https://unsplash.it/300/300" class="img-fluid mr-auto d-block border-0 rounded-0"></div>
-            <div class="col-md-9">
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis rerum quae, ut iusto placeat! Ab porro ipsa ad nam repudiandae, dicta ducimus placeat, ipsam in, doloribus obcaecati omnis esse aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum placeat at, deleniti minus necessitatibus, dolore adipisci ipsum provident distinctio in. Excepturi omnis, nisi. Possimus consequuntur unde labore rem in natus.</p>
-            </div>
-         </div>
+    <div class="parallax-hero" 
+         style="background-image: url('https://imageio.forbes.com/specials-images/imageserve/700741015/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds');">
+        
+        <div class="hero-text-overlay container"> 
+            <header class="text-center">
+                <h1>The Economic Impact of Snowfall on Labor Statistics in Chicago</h1>
+                <h3>By Ivan Skoropad</h3>
+            </header>
+            
+            <p class="lead-text text-center">
+                This project uses publicly available data to get possible insights about weather trends in
+                Chicago and the corresponding trend in the labor force.
+            </p>
+            
+            <p class="small-text text-center">
+                The analysis utilizes historical weather data from the National Centers for Environmental Information (NCEI),
+                specifically the Chicago O'Hare weather station. This is complemented by economic and employment data (CSV format) 
+                from the U.S. Bureau Labor Statistics (BLS) public APIs.
+            </p>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="container">
+            <h2 class="text-center">Part 1: Introduction</h2>
+            <p class="content-section p" style="font-size: 20px;">
+                Although for many people winter season is special because of holidays, winter break from school, or just aesthetics,
+                winter brings additional hazards to roads, electric lines, and heating systems. The city of Chicago, for example, uses significant resources
+                to aleviate such risks, often going over its snow removal budget. <br><br>
+                This project gathered publicly open data on weather and labor force statistics, cleaned the data into a usable
+                Pandas DataFrame format, and created Plotly visualizations with the said data to gather insights about the weather 
+                and employement trends over the changing seasons. <br><br>
+                While some visualizations showed clear trends, others were inconclusive.<br><br>
+                This project will start with general insights about the weather. Then it will describe insights about economic behavior 
+                of different industries over the years. Lastly, the project will raise a question whether getting economic insights
+                based on weather data is viable.
+        </div>
+    </div>
+    
+    <div class="parallax-section" 
+         style="background-image: url('https://cst.brightspotcdn.com/dims4/default/35b166f/2147483647/strip/true/crop/3761x2507+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fchorus-production-cst-web.s3.us-east-1.amazonaws.com%2Fbrightspot%2F9d%2F4b%2Fae31f1ffba6b31ced6d9ae712da0%2Fimg-0528.jpg');">
+        </div>
+
+
+    <div class="content-section">
+        <div class="container">
+            <h2 class="text-center">Chapter 2: Weather Trends</h2>
+            <p>
+                add text later
+            </p>
+        </div>
+    </div>
+    
+
+   <div class="content-section">
+      <div class="container">
+      <h2 class="text-center">Chapter 3: Weather Trends</h2>
+      <p>
+           add text later
+      </p>
       </div>
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
-   </body>
+   </div>
+
+
+   <div class="content-section">
+      <div class="container">
+      <h2 class="text-center">Chapter 4: Weather Trends</h2>
+      <p>
+          add text later
+      </p>
+      </div>
+   </div>
+
+
+
+   <div class="content-section">
+      <div class="container">
+      <h2 class="text-center">Chapter 5: FInal Words</h2>
+      <p>
+          add text later
+      </p>
+      </div>
+   </div>
+
+</body>
 </html>

@@ -1,0 +1,83 @@
+
+.parallax-hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    min-height: 100vh; 
+    
+    display: flex;
+    align-items: center; /* Vertically center the content wrapper */
+    justify-content: center; /* Horizontally center the content wrapper */
+}
+
+.hero-text-overlay {
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+    padding: 40px 60px;
+    border-radius: 8px; /* Slightly rounded corners */
+    max-width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /*slight shadow behind the box */
+}
+
+
+.content-section {
+    background-color: white; 
+    padding: 60px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+}
+
+
+.parallax-section {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    min-height: 60vh; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-section {
+    background-color: white; 
+    padding: 60px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+}
+
+
+
+.content-section p {
+    margin-bottom: 1.5em; 
+    line-height: 1.7;     
+    font-size: 1.05em;    
+    color: #495057;      
+}
+
+
+.lead-text {
+    font-size: 1.45em; 
+    color: #343a40;   
+    margin-bottom: 40px;
+    font-weight: 300;  
+}
+
+
+.small-text {
+    font-size: 1em; 
+    color: #6c757d; 
+    margin-top: -15px; 
+    font-style: italic; 
+}
+
+
+.content-section h2 {
+    font-size: 2em;
+    color: #007bff; 
+    border-bottom: 2px solid #e9ecef; 
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}

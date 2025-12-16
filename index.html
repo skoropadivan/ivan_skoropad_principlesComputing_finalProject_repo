@@ -25,8 +25,8 @@
             
             <p class="small-text text-center">
                 The analysis utilizes historical weather data from the National Centers for Environmental Information (NCEI),
-                specifically the Chicago O'Hare weather station. This is complemented by economic and employment data (CSV format) 
-                from the U.S. Bureau Labor Statistics (BLS) public APIs.
+                specifically the Chicago O'Hare weather station, years 2015 through 2022. This is complemented by economic and employment data (CSV format) 
+                from the U.S. Bureau Labor Statistics (BLS) public APIs (2015-2022 also).
             </p>
         </div>
     </div>
@@ -53,10 +53,10 @@
       <div class="hero-text-overlay container"> 
             <header class="text-center">
                  <h2 class="text-center">Section 2: Weather Trends</h2>
-                 <iframe src="fig5_dualAxisLine_precipitationTemperature_yearTime.html" height="700" width="1200"></iframe>
-               <p>
-                  The Dual-axis line plot above plots daily minimal temperature (primary y-axis)
-                  and amount of daily precipitation in inches (secondary y-axis). <br><br>
+                 <iframe src="fig5_dualAxisLine_precipitationTemperature_yearTime.html" height="700" width="1250"></iframe>
+               <p class="paragraph-text">
+                  The dual-axis line plot above plots daily minimal temperature (primary y-axis)
+                  and amount of daily precipitation in inches (secondary y-axis). <br>
                   Excluding the precipitation outliers, such as June 2020 or October 2017, the visualization shows
                   that temperature and precipitation are positively correlated. That is,
                   during warm months, as tge daily temperature increases, so does the 
@@ -65,7 +65,7 @@
                   as the rain does not have to be plowed as snow does.
                </p> <br><br>
                <iframe src="fig6_box_minTempYearStats.html" height="500" width="1000"></iframe>
-               <p>
+               <p class="paragraph-text">
                   The statistics described in the box plot above show that the median values 
                   of minimum daily temperatures do not follow a clear increasing or decreasing 
                   trend but rather oscilate around the 42 degrees Fahrenheit mark. From the visualization 
@@ -73,7 +73,7 @@
                   during any other years, although the median value was at the 41 degree mark.
                </p>
                <br><br>
-               <p style="font-size: 1.3em;">
+               <p style="font-size: 1.5em;">
                   The first graph describes cyclical weather conditions (precipitaition and temperature decreases during winter). 
                   The second graph shows years that are outliers by their temperature values. 
                   Both will be useful in interpreting possible spikes or falls in metrics in visualizations in the following sections. 
@@ -90,37 +90,126 @@
 
    <div class="parallax-section" 
          style="background-image: url('rain_image.jpg');">
+      <div class="hero-text-overlay container"> 
+            <header class="text-center">
+               <h2 class="text-center">Section 3: Labor Force Trends</h2>
+               <iframe src="fig1_sectors_wage_change.html" height="700" width="1250"></iframe>
+               <p class="paragraph-text">
+                  The box plot shown above compares sectors by average wage change percentages. 
+                  This visualization gives insight into which sectors are the most or least stable. 
+                  Knowing this can give insight to the city of Chicago or other investors into which  
+                  sectors are stable and therefore are a good investment. Additionally, the city government 
+                  will know which sectors expect the most cyclical unemployment and to adjust accordingly. <br>
+                  The visualization above shows that Financial Activities and Construction services have seen among 
+                  the largest average wage increases among all sectors (5.11% increase and 4.97% increase respectively),
+                   but not as large as Leisure and Hospitality sector (7.33% average increase over 2015-2022 period). 
+                  Goods-Producing and Manufacturing sectors have grown the least (3.05% and 3.14% respectively).
+                   From the figure, it can be inferred 
+                  that Manufacturing and Goods-Producing sectors are viable and safe investment options.
+               </p> <br><br>
+               <iframe src="fig8_rollingAvgLine_ConstructionUtilitiesWages.html" height="800" width="1000"></iframe>
+               <p class="paragraph-text">
+                  The two plots above perfectly exemplify the interconnectedness between the economy and 
+                  people's wages, since the wages oscillate with the economic cycle. Additionally, the 
+                  line plots (running averages of the raw data) show that despite the peaks and troughs of economic cycle, 
+                  there is a long-run economic growth. <br>
+                  Comparison in wages supports the claims made after the wage change bar chart: 
+                  Trade, Transportation, and Utilities sector has seen smaller increase of wages over the years 
+                  (4.57% compared to Construction's 4.97%) and, therefore, it had a smaller decrease and faster return to normal 
+                  in wages during and after Covid-19. These relationships show that sectors with smaller growth are less volatile 
+                  to social circumstances. This means that said sectors are safer investments.<br>
+                  Additionally, the increase of wages arround summertime in Construction sector aligns with expectation of increased construction 
+                  during warm parts of the year. The increase of wages in Utilities sector during winter aligns with the expectation for higher 
+                  heating and electricity demand during cold parts of the year.
+               </p>
+               <br>
+               <iframe src="fig4_scatter_weeklyWageAmoung_perQuarter.html" height="700" width="700"></iframe>
+               <p class="paragraph-text">
+                  The scatter plot above shows the variation of average weekly wage amount based on a quarter of the year. 
+                  Quarters 1 and 4 have slightly higher wages than quarters 2 and 4. This finding supports the wage valitility caused by
+                   the economic cycle 
+                  shown in a previous figure. Aside from that, there is not a viable reason to why across all sectors, wages tend to 
+                  increase during quarters 1 and 4.
+               </p>
+               <iframe src="fig7_dualAxisLine_wagesPerYear.html" height="700" width="1250"></iframe>
+               <p class="paragraph-text">
+                  In the figure above, Covid-19 impact is clearly visible because of decrease of both total and taxable wages. 
+                  The fact that taxable wages decreased by a much greater relative magnitude than total wages could be explained 
+                  by government's targeted relief programs. <br>
+                  On the other hand, a sharp decrease in both metrics happened in 2016. There were no major events that could have caused this effect. This 
+                  dip could be explained by corrupted Bureau of Labor Statistics data for the 2016 fiscal year.
+               </p>
+               <p style="font-size: 1.5em;">
+                  The data visualizations discussed above help understand the connection between sector volatility due to economic cycle and 
+                  wage changes. Apart from the faulty 2016 data in the last figure, all data helps to explain sector volatility and cyclicality 
+                  trends. Through data visualizations, effects of Covid-19, as a major social schock, on wages can be traced.
+                  <br>
+                  Overall, this section supported the claim that sectors that historically see steadier growths are affected by major events (Covid-19 in 
+                  my examples) less 
+                  and return to the consistent growth faster than higher-growth sectors. 
+               </p>
+               </header>
+        </div>
         </div>
 
-   <div class="content-section">
-      <div class="container">
-      <h2 class="text-center">Section 3: Weather Trends</h2>
-      <p>
-         add txt later
-      </p>
+
+   <div class="parallax-section" 
+         style="background-image: url('downtown_chicago.jpg');">
+      <div class="hero-text-overlay container"> 
+            <header class="text-center">
+               <h2 class="text-center">Section 4: Economic Insights Based on Weather Data</h2>
+               <iframe src="fig1_sectors_wage_change.html" height="700" width="1250"></iframe>
+               <p class="paragraph-text">
+                  add text later
+               </p> <br><br>
+               <iframe src="fig2_boxplot_JulyJanuaryEmployment.html" height="800" width="1000"></iframe>
+               <p class="paragraph-text">
+                  add text later
+               </p>
+               <br>
+               <iframe src="fig3_scatter_transportationEmployment_snowDepth.html" height="700" width="700"></iframe>
+               <p class="paragraph-text">
+                  add text later
+               </p>
+               <iframe src="fig4_scatter_weeklyWageAmoung_perQuarter.html" height="700" width="1250"></iframe>
+               <p class="paragraph-text">
+                  add text later
+               </p>
+               <p style="font-size: 1.5em;">
+                  add text later 
+               </p>
+               </header>
+         </div>
       </div>
-   </div>
 
-
-   <div class="content-section">
-      <div class="container">
-      <h2 class="text-center">Section 4: Weather Trends</h2>
-      <p>
-          add text later
-      </p>
+  <div class="parallax-section" 
+         style="background-image: url('birds-eye-view-chicago.jpg');">
+      <div class="hero-text-overlay container">
+          <h2 class="text-center">Section 1: Introduction</h2>
+            <p style="font-size: 20px;">
+                Although for many people winter season is special because of holidays, winter break from school, or just aesthetics,
+                winter brings additional hazards to roads, electric lines, and heating systems. The city of Chicago, for example, uses significant resources
+                to aleviate such risks, often going over its snow removal budget. <br><br>
+                This project gathered publicly open data on weather and labor force statistics, cleaned the data into a usable
+                Pandas DataFrame format, and created Plotly visualizations with the said data to gather insights about the weather 
+                and employement trends over the changing seasons. <br><br>
+                While some visualizations showed clear trends, others were inconclusive.<br><br>
+                This project will start with general insights about the weather. Then it will describe insights about economic behavior 
+                of different industries over the years. Lastly, the project will raise a question whether getting economic insights
+                based on weather data is viable.
+            </p>
       </div>
-   </div>
 
+  </div>
 
-
-   <div class="content-section">
-      <div class="container">
-      <h2 class="text-center">Section 5: FInal Words</h2>
-      <p>
-          add text later
-      </p>
+      <div class="content-section">
+         <div class="container">
+         <h2 class="text-center">Section 5: FInal Words</h2>
+         <p>
+               add text later
+         </p>
+         </div>
       </div>
-   </div>
 
 </body>
 </html>

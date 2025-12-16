@@ -1,0 +1,14 @@
+section 2 (weather):
+fig 5
+fig 6
+
+section 3 (sectors trends):
+fig 1
+fig 8
+fig 4
+fig 7
+section 4 (viability of guess?):
+fig 2?
+fig 3
+fig 4
+

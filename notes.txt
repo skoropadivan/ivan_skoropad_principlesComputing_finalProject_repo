@@ -12,3 +12,133 @@ fig 2?
 fig 3
 fig 4
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Skoropad Final Project</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="parallax-hero" 
+         style="background-image: url('https://imageio.forbes.com/specials-images/imageserve/700741015/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds');">
+        
+        <div class="hero-text-overlay container"> 
+            <header class="text-center">
+                <h1>The Economic Impact of Snowfall on Labor Statistics in Chicago</h1>
+                <h3>By Ivan Skoropad</h3>
+            </header>
+            
+            <p class="lead-text text-center">
+                This project uses publicly available data to get possible insights about weather trends in
+                Chicago and the corresponding trend in the labor force.
+            </p>
+            
+            <p class="small-text text-center">
+                The analysis utilizes historical weather data from the National Centers for Environmental Information (NCEI),
+                specifically the Chicago O'Hare weather station. This is complemented by economic and employment data (CSV format) 
+                from the U.S. Bureau Labor Statistics (BLS) public APIs.
+            </p>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="container">
+            <h2 class="text-center">Section 1: Introduction</h2>
+            <p style="font-size: 20px;">
+                Although for many people winter season is special because of holidays, winter break from school, or just aesthetics,
+                winter brings additional hazards to roads, electric lines, and heating systems. The city of Chicago, for example, uses significant resources
+                to aleviate such risks, often going over its snow removal budget. <br><br>
+                This project gathered publicly open data on weather and labor force statistics, cleaned the data into a usable
+                Pandas DataFrame format, and created Plotly visualizations with the said data to gather insights about the weather 
+                and employement trends over the changing seasons. <br><br>
+                While some visualizations showed clear trends, others were inconclusive.<br><br>
+                This project will start with general insights about the weather. Then it will describe insights about economic behavior 
+                of different industries over the years. Lastly, the project will raise a question whether getting economic insights
+                based on weather data is viable.
+<div class="parallax-section" 
+      style="background-image: url('snow-plow-picture.jpg');">
+      <div class="hero-text-overlay container"> 
+            <header class="text-center">
+                 <h2 class="text-center">Section 2: Weather Trends</h2>
+            </header>
+        </div>
+    </div>
+
+    
+</div>
+
+
+    <div class="content-section">
+        <div class="container">
+            <h2 class="text-center">Section 2: Weather Trends</h2>
+            <iframe src="fig5_dualAxisLine_precipitationTemperature_yearTime.html" height="700" width="1500"></iframe>
+            <p>
+         The Dual-axis line plot above plots daily minimal temperature (primary y-axis)
+         and amount of daily precipitation in inches (secondary y-axis). <br><br>
+         Excluding the precipitation outliers, such as June 2020 or October 2017, the visualization shows
+         that temperature and precipitation are positively correlated. That is,
+          during warm months, as tge daily temperature increases, so does the 
+         amount of rain. This trend is useful because it shows that the city of 
+         Chicago does not have to concern itself with seasons of high precipitation, 
+         as the rain does not have to be plowed as snow does.
+            </p> <br><br>
+            <iframe src="fig6_box_minTempYearStats.html" height="500" width="1000"></iframe>
+            <p>
+               The statistics described in the box plot above show that the median values 
+               of minimum daily temperatures do not follow a clear increasing or decreasing 
+               trend but rather oscilate around the 42 degrees Fahrenheit mark. From the visualization 
+               it is also clear that in 2019 winter was atypically colder and the summer was hotter than 
+               during any other years, although the median value was at the 41 degree mark.
+            </p>
+            <br><br>
+            <p style="font-size: 1.3em;">
+               The first graph describes cyclical weather conditions (precipitaition and temperature decreases during winter). 
+               The second graph shows years that are outliers by their temperature values. 
+               Both will be useful in interpreting possible spikes or falls in metrics in visualizations in the following sections. 
+               It is also important to remember social circumstances of data: COVID-19 played a crucial role in labor market, possibly 
+               causing decreases in wages or employment. Therefore, any significant changes in wages in Utilities/Transportation sector that might 
+               have occured due to harsh winter conditions, are likely to be affected by the labor force dynamics caused by the pandemic.
+            </p>
+         </div>
+    </div>
+    
+   <div class="parallax-section" 
+         style="background-image: url('rain_image.jpg');">
+        </div>
+
+   <div class="content-section">
+      <div class="container">
+      <h2 class="text-center">Section 3: Weather Trends</h2>
+      <p>
+         add txt later
+      </p>
+      </div>
+   </div>
+
+
+   <div class="content-section">
+      <div class="container">
+      <h2 class="text-center">Section 4: Weather Trends</h2>
+      <p>
+          add text later
+      </p>
+      </div>
+   </div>
+
+
+
+   <div class="content-section">
+      <div class="container">
+      <h2 class="text-center">Section 5: FInal Words</h2>
+      <p>
+          add text later
+      </p>
+      </div>
+   </div>
+
+</body>
+</html>

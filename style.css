@@ -6,7 +6,7 @@
     background-attachment: fixed;
     padding: 60px 0;
     margin-bottom: 20px;
-    min-height: 125vh; 
+    min-height: 100vh; 
     border-radius: 8px;
     display: flex;
     align-items: center; /* Vertically center the content wrapper */

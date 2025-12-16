@@ -25,7 +25,8 @@
             
             <p class="small-text text-center">
                 The analysis utilizes historical weather data from the National Centers for Environmental Information (NCEI),
-                specifically the Chicago O'Hare weather station, years 2015 through 2022. This is complemented by economic and employment data (CSV format) 
+                specifically the Chicago O'Hare weather station, years 2015 through 2022. This is complemented by economic and employment data (CSV format) of Chicago
+                 and surrounding area (Naperville and Elgin)
                 from the U.S. Bureau Labor Statistics (BLS) public APIs (2015-2022 also).
             </p>
         </div>
@@ -73,7 +74,7 @@
                   during any other years, although the median value was at the 41 degree mark.
                </p>
                <br><br>
-               <p style="font-size: 1.5em;">
+               <p style="font-size: 1.7em;">
                   The first graph describes cyclical weather conditions (precipitaition and temperature decreases during winter). 
                   The second graph shows years that are outliers by their temperature values. 
                   Both will be useful in interpreting possible spikes or falls in metrics in visualizations in the following sections. 
@@ -139,7 +140,7 @@
                   On the other hand, a sharp decrease in both metrics happened in 2016. There were no major events that could have caused this effect. This 
                   dip could be explained by corrupted Bureau of Labor Statistics data for the 2016 fiscal year.
                </p>
-               <p style="font-size: 1.5em;">
+               <p style="font-size: 1.7em;">
                   The data visualizations discussed above help understand the connection between sector volatility due to economic cycle and 
                   wage changes. Apart from the faulty 2016 data in the last figure, all data helps to explain sector volatility and cyclicality 
                   trends. Through data visualizations, effects of Covid-19, as a major social schock, on wages can be traced.
@@ -158,25 +159,32 @@
       <div class="hero-text-overlay container"> 
             <header class="text-center">
                <h2 class="text-center">Section 4: Economic Insights Based on Weather Data</h2>
-               <iframe src="fig1_sectors_wage_change.html" height="700" width="1250"></iframe>
+               <iframe src="fig2_boxplot_JulyJanuaryEmployment.html" height="700" width="700"></iframe>
                <p class="paragraph-text">
-                  add text later
-               </p> <br><br>
-               <iframe src="fig2_boxplot_JulyJanuaryEmployment.html" height="800" width="1000"></iframe>
-               <p class="paragraph-text">
-                  add text later
+                  The box plots above show employement statistics across years in January and July. The difference 
+                  between the two plots is slight, but still important: there are about 20 more thousand people at the median 
+                  employed during January than during July. This is a significant difference that will be crucial in understanding 
+                  the last data visualization in this section.
                </p>
                <br>
                <iframe src="fig3_scatter_transportationEmployment_snowDepth.html" height="700" width="700"></iframe>
                <p class="paragraph-text">
-                  add text later
+                  The scatter plot above shows the relationship between amount of people employed and snow depth. 
+                  The vast majority of data points are clustered toward the snow depth of 0 inches, which aligns with the fact that 
+                  there is no snow for the majority of the year. With increase of values on the x-axis, the amount of people 
+                  employed changes chaotically rather than following a certain trend. <br>
+                  No clear conclusion can be made about the relationship of variables can be made from this visualzation.
                </p>
                <iframe src="fig4_scatter_weeklyWageAmoung_perQuarter.html" height="700" width="1250"></iframe>
                <p class="paragraph-text">
-                  add text later
+                  The data visualized above, discussed in Section 3, goes is supported by the box plot trend described 
+                  at the beginning of the section. The lower median employment during summertime could explain slightly lower wages 
+                  during quarters 3 and 4. This could be explained by people preferring leisure during warm times of the year.
                </p>
-               <p style="font-size: 1.5em;">
-                  add text later 
+               <p style="font-size: 1.7em;">
+                  Although data supports the fact of lower employment and wages around summertime, the difference is insignificant. <br>
+                  Therefore, it is questionable whether decisive conclusions regarding economic trends can be made based on weather data. 
+                  Any visible trends might be observed because of outlier situations rather than natural trends that can be generalized.
                </p>
                </header>
          </div>
@@ -185,18 +193,19 @@
   <div class="parallax-section" 
          style="background-image: url('birds-eye-view-chicago.jpg');">
       <div class="hero-text-overlay container">
-          <h2 class="text-center">Section 1: Introduction</h2>
-            <p style="font-size: 20px;">
-                Although for many people winter season is special because of holidays, winter break from school, or just aesthetics,
-                winter brings additional hazards to roads, electric lines, and heating systems. The city of Chicago, for example, uses significant resources
-                to aleviate such risks, often going over its snow removal budget. <br><br>
-                This project gathered publicly open data on weather and labor force statistics, cleaned the data into a usable
-                Pandas DataFrame format, and created Plotly visualizations with the said data to gather insights about the weather 
-                and employement trends over the changing seasons. <br><br>
-                While some visualizations showed clear trends, others were inconclusive.<br><br>
-                This project will start with general insights about the weather. Then it will describe insights about economic behavior 
-                of different industries over the years. Lastly, the project will raise a question whether getting economic insights
-                based on weather data is viable.
+          <h2 class="text-center">Section 5: Conclusion</h2>
+            <p style="font-size: 25px;">
+                This project used publicly available data to get possible insights about weather trends in Chicago and 
+                the corresponding trend in the labor force. The analysis helped to confirm that Trade, Transportation,Utilities 
+                and Construction sectors have cyclical wage trends that align with the season, where Construction wages 
+                increase in the summer and Utilities wages increase in the winter. <br><br>
+                Additionally, sectors with smaller, steadier growth, like Manufacturing and Goods-Producing, appear less volatile
+                 to major events such as COVID-19 than higher-growth sectors. They also returned to consistent growth faster,
+               making them safer investment options. <br><br>
+               it remains questionable whether decisive conclusions regarding broad economic trends can be made based on weather 
+               data alone. While weather-related cyclicality is visible in specific industries, the overall correlation between 
+               total employment/wages and weather data (like snow depth) was chaotic or insignificant. Any visible trends might 
+               be caused by outlier situations rather than natural trends that can be generalized.
             </p>
       </div>
 
@@ -204,9 +213,19 @@
 
       <div class="content-section">
          <div class="container">
-         <h2 class="text-center">Section 5: FInal Words</h2>
-         <p>
-               add text later
+         <h2 class="text-center">Section 6: Refrences</h2>
+         <p class="small-text">
+            <a href="https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation">NCEI JSON documentation</a>
+            <blockquote>
+               The link used to get the JSON data for the project: <br><br>
+               <a href="https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00094846&startDate=2018-01-01&endDate=2022-12-31&dataTypes=PRCP,SNOW,SNWD,TMAX,TMIN,AWND&format=json&units=standard">https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00094846&startDate=2018-01-01&endDate=2022-12-31&dataTypes=PRCP,SNOW,SNWD,TMAX,TMIN,AWND&format=json&units=standard</a>
+            </blockquote>
+            <a href="https://www.bls.gov/cew/additional-resources/open-data/csv-data-slices.htm#AREA-SLICES">BLS CSV APIs documentation</a>
+            <blockquote>
+               Sample link used to get one of the 32 CSV data files used in the project: <br><br>
+               <a href="https://data.bls.gov/cew/data/api/2023/1/area/C1698.csv">https://data.bls.gov/cew/data/api/2023/1/area/C1698.csv</a>
+            </blockquote>
+            <a href="https://colab.research.google.com/drive/1Njlby1Gp59QH__IZ7VZUTgM6yDLK1Ys0?usp=sharing">Code used to clean the data</a>
          </p>
          </div>
       </div>
